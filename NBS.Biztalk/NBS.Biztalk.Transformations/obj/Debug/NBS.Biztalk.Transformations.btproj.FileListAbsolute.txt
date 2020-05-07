@@ -1,0 +1,5 @@
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Transformations\bin\Debug\NBS.Biztalk.Transformations.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Transformations\bin\Debug\NBS.Biztalk.Transformations.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Transformations\bin\Debug\NBS.Biztalk.Schemas.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Transformations\obj\Debug\NBS.Biztalk.Transformations.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Transformations\obj\Debug\NBS.Biztalk.Transformations.pdb

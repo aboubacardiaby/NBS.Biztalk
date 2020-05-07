@@ -1,0 +1,11 @@
+C:\github\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.Pipelines.dll
+C:\github\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.Pipelines.pdb
+C:\github\NBS.Biztalk\NBS.Biztalk.Pipelines\obj\Debug\NBS.Biztalk.Pipelines.dll
+C:\github\NBS.Biztalk\NBS.Biztalk.Pipelines\obj\Debug\NBS.Biztalk.Pipelines.pdb
+C:\github\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.PipelineComponents.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.Pipelines.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.Pipelines.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.Package.pipelineComponents.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Pipelines\bin\Debug\NBS.Biztalk.PipelineComponents.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Pipelines\obj\Debug\NBS.Biztalk.Pipelines.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Pipelines\obj\Debug\NBS.Biztalk.Pipelines.pdb

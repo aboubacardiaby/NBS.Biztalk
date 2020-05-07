@@ -1,0 +1,16 @@
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\NBS.Biztalk.Package.pipelineComponents.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\NBS.Biztalk.Package.pipelineComponents.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.StreamProcessing.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.FlatFile.Parser.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.XLANGs.RuntimeTypes.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.Streaming.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.Messaging.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.CommonSettings.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\Microsoft.BizTalk.Interop.Agent.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\obj\Debug\NBS.Biztalk.Package.pipelineComponents.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\obj\Debug\NBS.Biztalk.Package.pipelineComponents.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\obj\Debug\NBS.Biztalk.Package.pipelineComponents.csprojResolveAssemblyReference.cache
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\NBS.Biztalk.Utlity.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Package.pipelineComponents\bin\Debug\NBS.Biztalk.Utlity.pdb

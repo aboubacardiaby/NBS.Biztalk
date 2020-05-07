@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2014-03-24T21:26:46Z</Created>
+  <LastSaved>2020-05-05T21:56:08Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12225</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="40% - Accent1 Bold">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="Normal Bold">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s67" ss:Parent="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Settings">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="15" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="13.6875">
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:Width="242.25" ss:Span="2"/>
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="258"/>
+   <Column ss:AutoFitWidth="0" ss:Width="161.25" ss:Span="1"/>
+   <Row ss:AutoFitHeight="0" ss:Height="21">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Environment Settings</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Environment Name:</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Default Values</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">BiztalkSitVM</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Local Development</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Shared Development</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Test</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Production</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Generate File?</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings File Name:</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Exported_SitSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Exported_LocalSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Exported_DevSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Exported_TestSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Exported_ProdSettings.xml</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings:</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s40"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SsoAppUserGroup</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SsoAppAdminGroup</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rcv_incoming</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Rcv\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Rcv\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Rcv\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Rcv\</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Send_file</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Snd\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Snd\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Snd\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Snd\</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">archivelocation</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Archiver\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Archiver\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Archiver\</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Archiver\</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SvBusAddress</Data></Cell>
+    <Cell><Data ss:Type="String">sb://resident.servicebus.windows.net/orders</Data></Cell>
+    <Cell><Data ss:Type="String">sb://resident.servicebus.windows.net/orders</Data></Cell>
+    <Cell><Data ss:Type="String">sb://resident.servicebus.windows.net/orders</Data></Cell>
+    <Cell><Data ss:Type="String">sb://resident.servicebus.windows.net/orders</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ServiceBusIssuerSecret</Data></Cell>
+    <Cell><Data ss:Type="String">qqCMrL2cy/v0fWNvONLV1aIsP1Q6O+o9S4ggDTig1cA=</Data></Cell>
+    <Cell><Data ss:Type="String">qqCMrL2cy/v0fWNvONLV1aIsP1Q6O+o9S4ggDTig1cA=</Data></Cell>
+    <Cell><Data ss:Type="String">qqCMrL2cy/v0fWNvONLV1aIsP1Q6O+o9S4ggDTig1cA=</Data></Cell>
+    <Cell><Data ss:Type="String">qqCMrL2cy/v0fWNvONLV1aIsP1Q6O+o9S4ggDTig1cA=</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Fail_Message</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Failed</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Failed</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Failed</Data></Cell>
+    <Cell><Data ss:Type="String">C:\github\NBS.Biztalk\Failed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ConnectionString</Data></Cell>
+    <Cell><Data ss:Type="String">Data Source = .; Initial Catalog = Logging;Integrated Security=true;</Data></Cell>
+    <Cell><Data ss:Type="String">Data Source = BiztalkSitVM; Initial Catalog = Logging;Integrated Security=true;</Data></Cell>
+    <Cell><Data ss:Type="String">Data Source = DESKTOP-0K7RGRQ; Initial Catalog = Logging;Integrated Security=true;</Data></Cell>
+    <Cell><Data ss:Type="String">Data Source = DESKTOP-0K7RGRQ; Initial Catalog = Logging;Integrated Security=true;</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.25" x:Left="0.25" x:Right="0.25" x:Top="0.25"/>
+   </PageSetup>
+   <Unsynced/>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>81</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>90</Zoom>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>6</SplitHorizontal>
+   <TopRowBottomPane>6</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>14</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

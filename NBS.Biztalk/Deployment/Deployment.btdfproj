@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Deployment Framework for BizTalk
+  Copyright (C) Thomas F. Abraham, Scott Colestock
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Installer">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">x86</Platform>
+    <SchemaVersion>1.0</SchemaVersion>
+    <ProjectName>NBS.Biztalk</ProjectName>
+    <ProjectVersion>1.0</ProjectVersion>
+    <IncludeSSO>True</IncludeSSO>
+    <IncludePipelines>True</IncludePipelines>
+    <IncludeSchemas>True</IncludeSchemas>
+    <IncludeOrchestrations>true</IncludeOrchestrations>
+    <IncludeTransforms>True</IncludeTransforms>
+    <IncludePipelineComponents>true</IncludePipelineComponents>
+    <IncludeComponents>True</IncludeComponents>
+    <UsingMasterBindings>True</UsingMasterBindings>
+    <RequireXmlPreprocessDirectives>False</RequireXmlPreprocessDirectives>
+    <ApplyXmlEscape>True</ApplyXmlEscape>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Properties related to building an MSI for server deployments -->
+    <!-- BizTalk App Version Upgrade -->
+    <!--   For each new product release to be deployed to your BizTalk servers: -->
+    <!--     1) Increment ProductVersion -->
+    <!--     2) Generate a new GUID and update ProductId with the new GUID -->
+    <!--   This allows the new MSI to automatically uninstall (not undeploy!) the old MSI and install the new one. -->
+    <ProductVersion>1.0.0</ProductVersion>
+    <ProductId>a7cd6b3a-1f31-4dbf-8cbf-fc54d1bd8424</ProductId>
+    <!-- BizTalk App Version Upgrade -->
+    <ProductName>NBS.Biztalk for BizTalk $(ProductVersion)</ProductName>
+    <Manufacturer>Deployment Framework User</Manufacturer>
+    <PackageDescription>NBS.Biztalk</PackageDescription>
+    <!-- NEVER change the ProductUpgradeCode. -->
+    <ProductUpgradeCode>5ffa6cca-a750-49d1-bea8-581166f66125</ProductUpgradeCode>
+  </PropertyGroup>
+  <!-- Under TFS Team Build, set CustomizableOutDir property to true in TFS 2005/2008/2010 UpgradeTemplate. -->
+  <!-- With a workflow build, copy the default template then modify the MSBuild task for the solution build. Set OutDir to blank and -->
+  <!-- CommandLineArguments to String.Format("/p:SkipInvalidConfigurations=true;TeamBuildOutDir=""{0}"" {1}", BinariesDirectory, MSBuildArguments). -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DeploymentFrameworkTargetsPath>$(MSBuildExtensionsPath)\DeploymentFrameworkForBizTalk\5.0\</DeploymentFrameworkTargetsPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' == ''">bin\Debug\</OutputPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' != ''">$(TeamBuildOutDir)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DeploymentFrameworkTargetsPath>$(MSBuildExtensionsPath)\DeploymentFrameworkForBizTalk\5.0\</DeploymentFrameworkTargetsPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' == ''">bin\Release\</OutputPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' != ''">$(TeamBuildOutDir)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Server'">
+    <DeploymentFrameworkTargetsPath>Framework\</DeploymentFrameworkTargetsPath>
+    <!-- Get our PDBs into the GAC so we get file/line number information in stack traces. -->
+    <DeployPDBsToGac>false</DeployPDBsToGac>
+  </PropertyGroup>
+  <ItemGroup>
+    <PropsFromEnvSettings Include="SsoAppUserGroup;SsoAppAdminGroup" />
+  </ItemGroup>
+  <!-- !!! TODO !!! -->
+  <!-- Add ItemGroup elements that contain one or more Schemas, Orchestrations, Transforms, etc. elements that describe -->
+  <!-- the specific artifacts in your solution that need to be deployed. Use IntelliSense as a guide. -->
+  <ItemGroup>
+    <Pipelines Include="NBS.Biztalk.Pipelines.dll">
+      <LocationPath>..\NBS.Biztalk.Pipelines\bin\$(Configuration)</LocationPath>
+    </Pipelines>
+  </ItemGroup>
+  <ItemGroup>
+    <PipelineComponents Include="NBS.Biztalk.PipelineComponents.dll">
+      <LocationPath>..\NBS.Biztalk.PipelineComponents\bin\$(Configuration)</LocationPath>
+    </PipelineComponents>
+  </ItemGroup>
+  <ItemGroup>
+    <Schemas Include="NBS.Biztalk.Schemas.dll">
+      <LocationPath>..\NBS.Biztalk.Schemas\bin\$(Configuration)</LocationPath>
+    </Schemas>
+  </ItemGroup>
+  <ItemGroup>
+    <PipelineComponents Include="NBS.Biztalk.Package.pipelineComponents.dll">
+      <LocationPath>..\NBS.Biztalk.Package.pipelineComponents\bin\$(Configuration)</LocationPath>
+    </PipelineComponents>
+  </ItemGroup>
+  <ItemGroup>
+    <Components Include="NBS.Biztalk.Utlity.dll">
+      <LocationPath>..\NBS.Biztalk.Utlity\bin\$(Configuration)</LocationPath>
+    </Components>
+  </ItemGroup>
+  <ItemGroup>
+    <Components Include="NBS.Biztalk.Logging.dll">
+      <LocationPath>..\NBS.Biztalk.Logging\bin\$(Configuration)</LocationPath>
+    </Components>
+  </ItemGroup>
+  <ItemGroup>
+    <Orchestrations Include="NBS.Biztalk.NominalOrchestrations.dll">
+      <LocationPath >..\NBS.Biztalk.NominalOrchestrations\bin\$(Configuration)</LocationPath>
+    </Orchestrations>
+  </ItemGroup>
+  <ItemGroup>
+    <Orchestrations Include="NBS.Biztalk.Orchestration.dll">
+      <LocationPath >..\NBS.Biztalk.Orchestration\bin\$(Configuration)</LocationPath>
+    </Orchestrations>
+  </ItemGroup>
+ <ItemGroup>
+   <Transforms Include="NBS.Biztalk.Transformations.dll">
+     <LocationPath>..\NBS.Biztalk.Transformations\bin\$(Configuration)</LocationPath>
+   </Transforms>
+ </ItemGroup>
+  <!-- !!! TODO !!! -->
+  <Import Project="$(DeploymentFrameworkTargetsPath)BizTalkDeploymentFramework.targets" />
+  <!--
+    The Deployment Framework automatically packages most files into the server install MSI.
+    However, if there are special folders that you need to include in the MSI, you can
+    copy them to the folder $(RedistDir) in the CustomRedist target.
+    To include individual files, add an ItemGroup with AdditionalFiles elements.
+  -->
+  <Target Name="CustomRedist">
+  </Target>
+</Project>

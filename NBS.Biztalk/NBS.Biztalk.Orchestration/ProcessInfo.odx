@@ -1,0 +1,135 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="335a8871-b29d-4039-8549-4e76637be07d" LowerBound="1.1" HigherBound="30.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="NBS.Biztalk.Orchestration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="bb9e1041-0453-4da9-a645-646ff040e73d" ParentLink="Module_ServiceDeclaration" LowerBound="11.1" HigherBound="29.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessInfo" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="b5c0341b-1faf-474d-a56c-b28d4bdfdbce" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="Type" Value="NBS.Biztalk.Schemas.Canonical_V1sd" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ResidentIn_Message" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="536fb068-1042-4cb5-8f58-890a58977b48" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="61ca77e6-61dd-4592-9e56-4d44b13ed39b" ParentLink="ServiceBody_Statement" LowerBound="21.1" HigherBound="23.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Test_Port" />
+                    <om:Property Name="MessageName" Value="ResidentIn_Message" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Activating_Resident_Message_Receive" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="8a733f43-f05d-4677-ab8f-1b74fd4eabdb" ParentLink="ServiceBody_Statement" LowerBound="23.1" HigherBound="25.1">
+                    <om:Property Name="Expression" Value="NBS.Biztalk.Logging.Log.LogInSql(&quot;1&quot;, &quot;Low&quot;,System.Environment.MachineName, &quot;Biztalk&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Send" OID="a22a4c63-472b-4b5d-bf98-86cab3abbf2f" ParentLink="ServiceBody_Statement" LowerBound="25.1" HigherBound="27.1">
+                    <om:Property Name="PortName" Value="Send_Resident_Port" />
+                    <om:Property Name="MessageName" Value="ResidentIn_Message" />
+                    <om:Property Name="OperationName" Value="ResidentReq_operation" />
+                    <om:Property Name="OperationMessageName" Value="request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="676d9727-1773-4ef1-aabd-1311d11ea7d5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="14.1" HigherBound="16.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="8" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="NBS.Biztalk.NominalOrchestrations.ResidentReq_PortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Send_Resident_Port" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="04406fa0-f5ff-4b1d-ac3d-c1d3a4ce4862" ParentLink="PortDeclaration_CLRAttribute" LowerBound="14.1" HigherBound="15.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c775b0e9-287f-44da-84bf-1d432f95b06c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="16.1" HigherBound="18.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="NBS.Biztalk.Orchestration.TestPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Test_Port" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="1a58cd9a-2cf8-4fe7-ae03-032147de8526" ParentLink="PortDeclaration_CLRAttribute" LowerBound="16.1" HigherBound="17.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="730f1198-50cb-4332-8d60-9215393ea35f" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="TestPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ba7ec53a-8a18-459c-b970-b755d1670299" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="870355ca-b67d-4376-b839-21c63c357562" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.47">
+                    <om:Property Name="Ref" Value="NBS.Biztalk.Schemas.Canonical_V1sd" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module NBS.Biztalk.Orchestration
+{
+    public porttype TestPortType
+    {
+        oneway Operation_1
+        {
+            NBS.Biztalk.Schemas.Canonical_V1sd
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProcessInfo
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses NBS.Biztalk.NominalOrchestrations.ResidentReq_PortType Send_Resident_Port;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements TestPortType Test_Port;
+        message NBS.Biztalk.Schemas.Canonical_V1sd ResidentIn_Message;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("61ca77e6-61dd-4592-9e56-4d44b13ed39b")]
+            activate receive (Test_Port.Operation_1, ResidentIn_Message);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8a733f43-f05d-4677-ab8f-1b74fd4eabdb")]
+            NBS.Biztalk.Logging.Log.LogInSql("1", "Low",System.Environment.MachineName, "Biztalk", "", "", "", "");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a22a4c63-472b-4b5d-bf98-86cab3abbf2f")]
+            send (Send_Resident_Port.ResidentReq_operation, ResidentIn_Message);
+        }
+    }
+}
+

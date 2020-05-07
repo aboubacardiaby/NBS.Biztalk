@@ -1,0 +1,7 @@
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\bin\Debug\NBS.Biztalk.Orchestration.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\bin\Debug\NBS.Biztalk.Orchestration.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\obj\Debug\NBS.Biztalk.Orchestration.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\obj\Debug\NBS.Biztalk.Orchestration.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\bin\Debug\NBS.Biztalk.NominalOrchestrations.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\bin\Debug\NBS.Biztalk.Schemas.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Orchestration\bin\Debug\NBS.Biztalk.Logging.dll
