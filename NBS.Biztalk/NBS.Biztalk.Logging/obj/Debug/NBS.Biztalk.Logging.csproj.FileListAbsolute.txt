@@ -4,3 +4,4 @@ C:\ReTest\NBS.Biztalk\NBS.Biztalk.Logging\bin\Debug\Microsoft.BizTalk.Interop.SS
 C:\ReTest\NBS.Biztalk\NBS.Biztalk.Logging\bin\Debug\SSOSettingsFileReader.dll
 C:\ReTest\NBS.Biztalk\NBS.Biztalk.Logging\obj\Debug\NBS.Biztalk.Logging.dll
 C:\ReTest\NBS.Biztalk\NBS.Biztalk.Logging\obj\Debug\NBS.Biztalk.Logging.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.Logging\obj\Debug\NBS.Biztalk.Logging.csprojResolveAssemblyReference.cache

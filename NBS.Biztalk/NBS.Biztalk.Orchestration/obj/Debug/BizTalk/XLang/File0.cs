@@ -533,8 +533,8 @@ namespace NBS.Biztalk.Orchestration
         {
             Microsoft.XLANGs.Core.Segment __seg__ = _segments[0];
             Microsoft.XLANGs.Core.Context __ctx__ = (Microsoft.XLANGs.Core.Context)_stateMgrs[0];
-            __ProcessInfo_root_0 __ctx0__ = (__ProcessInfo_root_0)_stateMgrs[0];
             __ProcessInfo_1 __ctx1__ = (__ProcessInfo_1)_stateMgrs[1];
+            __ProcessInfo_root_0 __ctx0__ = (__ProcessInfo_root_0)_stateMgrs[0];
 
             switch (__seg__.Progress)
             {
@@ -579,8 +579,8 @@ namespace NBS.Biztalk.Orchestration
             Microsoft.XLANGs.Core.Envelope __msgEnv__ = null;
             Microsoft.XLANGs.Core.Segment __seg__ = _segments[1];
             Microsoft.XLANGs.Core.Context __ctx__ = (Microsoft.XLANGs.Core.Context)_stateMgrs[1];
-            __ProcessInfo_root_0 __ctx0__ = (__ProcessInfo_root_0)_stateMgrs[0];
             __ProcessInfo_1 __ctx1__ = (__ProcessInfo_1)_stateMgrs[1];
+            __ProcessInfo_root_0 __ctx0__ = (__ProcessInfo_root_0)_stateMgrs[0];
 
             switch (__seg__.Progress)
             {

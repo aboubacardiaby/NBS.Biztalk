@@ -44,7 +44,7 @@ namespace NBS.Biztalk.Pipelines
 "Occurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e410e-4cce-4536-83fa-4a5040674ad6\" />      <C"+
 "omponents />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "642b5c01-60d0-43b7-8e74-61b819b496fd";
+        private const string _versionDependentGuid = "a3a74821-95b4-467c-bc71-8aa0fa09ed09";
         
         public Incoming_Resident_ReceivePipeline()
         {

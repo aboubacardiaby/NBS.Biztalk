@@ -28,3 +28,7 @@ C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\obj\Debug\NBS.Biztalk.Pipel
 C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\obj\Debug\NBS.Biztalk.PipelineComponents.csprojResolveAssemblyReference.cache
 C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\bin\Debug\NBS.Biztalk.Package.pipelineComponents.dll
 C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\bin\Debug\NBS.Biztalk.Package.pipelineComponents.pdb
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\bin\Debug\NBS.Biztalk.Logging.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\bin\Debug\SSOSettingsFileReader.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\bin\Debug\Microsoft.BizTalk.Interop.SSOClient.dll
+C:\ReTest\NBS.Biztalk\NBS.Biztalk.PipelineComponents\bin\Debug\NBS.Biztalk.Logging.pdb

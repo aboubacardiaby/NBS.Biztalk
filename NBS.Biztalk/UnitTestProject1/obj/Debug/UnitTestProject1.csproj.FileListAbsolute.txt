@@ -16,3 +16,7 @@ C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\Microsoft.BizTalk.Messaging.dll
 C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\Microsoft.BizTalk.CommonSettings.dll
 C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\Microsoft.BizTalk.Interop.Agent.dll
 C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\NBS.Biztalk.Utlity.pdb
+C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\NBS.Biztalk.Logging.dll
+C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\SSOSettingsFileReader.dll
+C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\Microsoft.BizTalk.Interop.SSOClient.dll
+C:\ReTest\NBS.Biztalk\UnitTestProject1\bin\Debug\NBS.Biztalk.Logging.pdb
